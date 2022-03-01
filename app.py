@@ -1,10 +1,10 @@
-from flask import flask
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return flask.jsonify(['Welcome to Woven Tutorial App!'])
+    return 'Welcome to Woven Tutorial App!'
 
 if __name__ == "__main__":
     app.run(debug=true)
